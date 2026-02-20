@@ -16,3 +16,13 @@ def list_clients():
     else:
         for client in clients:
             print(f"- {client}")
+
+
+def find_client(name):
+    """Search client"""
+    if name in clientes:
+        print(f"Client {name} found in the system.")
+        return True
+    else:
+        print(f"Client {name} not found.")
+        return False
