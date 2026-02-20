@@ -10,3 +10,8 @@ rooms_db = {
     204: True,
     205: True
 }
+
+
+def get_all_rooms():
+    """Returns the list of all rooms and their status"""
+    return rooms_db
