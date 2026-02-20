@@ -7,3 +7,12 @@ def add_client(name):
     clients.append(name)
     print(f"Client {name} added successfully!")
 
+
+def list_clients():
+    """Displays a list of all registered clients"""
+    print("\n--- Hotel Client List ---")
+    if not clients:
+        print("The list is empty.")
+    else:
+        for client in clients:
+            print(f"- {client}")
