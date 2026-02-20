@@ -26,3 +26,12 @@ def find_client(name):
     else:
         print(f"Client {name} not found.")
         return False
+    
+
+def delete_customer(name):
+    """Delete client from list"""
+    if name in clientes:
+        clientes.remove(name)
+        print(f"Client {name} has been removed.")
+    else:
+        print(f"Error: Client {name} not found.")
