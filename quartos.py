@@ -31,3 +31,8 @@ def check_out_room(room_number):
     if room_number in rooms_db:
         rooms_db[room_number] = True
         print(f"Room {room_number} is now available.")
+
+
+def get_available_rooms():
+    """Returns only the rooms that are currently free"""
+    return {num: status for num, status in rooms_db.items() if status}
