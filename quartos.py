@@ -24,3 +24,10 @@ def book_room(room_number):
         print(f"Room {room_number} has been booked.")
     else:
         print("Room not found.")
+
+
+def check_out_room(room_number):
+    """Sets the room status to Available (True)"""
+    if room_number in rooms_db:
+        rooms_db[room_number] = True
+        print(f"Room {room_number} is now available.")
