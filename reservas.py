@@ -24,3 +24,13 @@ def cancel_reservation(room_number, rooms_db):
         print(f"Reservation for room {room_number} has been canceled.")
     else:
         print(f"No reservation found for room {room_number}.")
+
+
+def check_reservation(room_number):
+    """Checks who booked the specific room"""
+    for res in reservations:
+        if res["room"] == room_number:
+            print(f"Room {room_number} is reserved by {res['client']}.")
+            return res
+    print(f"No active reservation for room {room_number}.")
+    return None
