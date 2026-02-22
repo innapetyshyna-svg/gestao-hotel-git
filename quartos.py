@@ -20,7 +20,7 @@ def get_all_rooms():
 def book_room(room_number):
     """Sets the room status to Occupied (False)"""
     if room_number in rooms_db:
-        rooms_db[room_number] = False
+        #rooms_db[room_number] = False
         print(f"Room {room_number} has been booked.")
     else:
         print("Room not found.")
